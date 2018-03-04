@@ -22,7 +22,6 @@ describe('create rollup lib config', () => {
       typeList: [ 'foo' ]
     })
 
-    console.log(rollupConfig)
     expect(rollupConfig.length).toBe(0)
   })
 
