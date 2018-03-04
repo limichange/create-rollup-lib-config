@@ -7,8 +7,7 @@ module.exports = function createConfig ({
   author = '',
   name,
   version = '1.0.0',
-  typeList = ['umd', 'cjs', 'es'],
-  env = 'production'
+  typeList = ['umd', 'cjs', 'es']
 }) {
   if (!name) {
     throw new Error('options: need a lib name')
@@ -30,7 +29,6 @@ module.exports = function createConfig ({
     plugins: [
       buble()
     ],
-    env,
     output: []
   }]
 
