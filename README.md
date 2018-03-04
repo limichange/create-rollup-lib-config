@@ -1,8 +1,14 @@
 # create rollup lib config
 
+Don't like write rollup config file ? try it 😗.
+
 ## Install
 
-todo
+```sh
+$ yarn add @limichange/create-rollup-lib-config
+# or
+$ npm i @limichange/create-rollup-lib-config --save-dev
+```
 
 ## Usage
 
