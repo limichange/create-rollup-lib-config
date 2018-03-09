@@ -1,5 +1,6 @@
 const buble = require('rollup-plugin-buble')
 const uglify = require('rollup-plugin-uglify')
+const postcss = require('rollup-plugin-postcss')
 
 module.exports = function createConfig ({
   input = 'src/index.js',
@@ -27,7 +28,10 @@ module.exports = function createConfig ({
   let config = [{
     input,
     plugins: [
-      buble()
+      buble(),
+      postcss({
+        extract: true
+      })
     ],
     output: []
   }]
@@ -70,7 +74,10 @@ module.exports = function createConfig ({
       input,
       plugins: [
         buble(),
-        uglify()
+        uglify(),
+        postcss({
+          extract: true
+        })
       ],
       output: [
         {
