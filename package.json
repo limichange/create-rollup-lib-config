@@ -1,5 +1,5 @@
 {
-  "name": "@limichange/create-rollup-lib-config",
+  "name": "create-rollup-lib-config",
   "version": "0.0.5",
   "description": "create rollup lib config",
   "main": "src/index.js",
