@@ -28,10 +28,10 @@ module.exports = function createConfig ({
   let config = [{
     input,
     plugins: [
-      buble(),
       postcss({
         extract: true
-      })
+      }),
+      buble()
     ],
     output: []
   }]
@@ -73,11 +73,11 @@ module.exports = function createConfig ({
     config.push({
       input,
       plugins: [
-        buble(),
-        uglify(),
         postcss({
           extract: true
-        })
+        }),
+        buble(),
+        uglify()
       ],
       output: [
         {
