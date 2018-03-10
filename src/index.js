@@ -74,7 +74,8 @@ module.exports = function createConfig ({
       input,
       plugins: [
         postcss({
-          extract: true
+          extract: true,
+          minimize: true
         }),
         buble(),
         uglify()
